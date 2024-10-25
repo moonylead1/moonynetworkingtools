@@ -1,0 +1,90 @@
+PingWindowMain {
+    layout: horizontal;
+    background: $boost;
+    height: 12;
+    margin: 1;
+    min-width: 50;
+    padding: 1;
+}
+Grid {
+    grid-size: 2;
+    grid-columns: 3fr 1fr;
+    height: auto;
+}
+Vertical {
+    height: auto;
+}
+Horizontal {
+    height: auto;
+    margin-bottom: 1;
+    align: center middle;
+}
+Input {
+    width: 3fr;
+    margin-right: 1;
+}
+PingDisplay {
+    content-align: center middle;
+    text-opacity: 60%;
+    height: 3;
+    width: 1fr;
+    background: $surface;
+    border: solid $primary;
+    margin: 0 1;
+}
+SpeedTestDisplay {
+    content-align: left middle;
+    height: 4;
+    width: 1fr;
+    background: $surface;
+    border: solid $primary;
+    margin: 0 1;
+    padding: 1;
+}
+StatsDisplay {
+    background: $surface;
+    border: solid $primary;
+    height: 100%;
+    margin: 0 1;
+    padding: 1;
+}
+Button {
+    width: 16;
+    margin: 0 1;
+}
+#set_target {
+    width: 1fr;
+}
+#start_test {
+    margin-right: 1;
+}
+#stop_test {
+    display: none;
+}
+#speedtest {
+    width: 100%;
+}
+.started {
+    text-style: bold;
+    background: $success;
+    color: $text;
+}
+.started PingDisplay {
+    text-opacity: 100%;
+}
+.started #start_test {
+    display: none;
+}
+.started #stop_test {
+    display: block;
+}
+ConsoleLog {
+    height: 15;
+    background: $surface;
+    border-top: solid $primary;
+    margin: 0 1;
+    padding: 0 1;
+}
+ScrollableContainer {
+    height: auto;
+}
